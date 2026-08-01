@@ -116,6 +116,6 @@ if (user_input):
           st.html(code, width="stretch", unsafe_allow_javascript=True)
           if st.download_button(label = "DOWNLOAD PPT", data = code, file_name = "ppt.html",mime = 'text/html'):
             st.success("PPT Downloaded Successfully!!")
-          except Exception as err:
+        except Exception as err:
             st.error("Error Code: ",err)
  
