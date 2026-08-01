@@ -98,7 +98,7 @@ if (user_input):
   
   with tab2:
     if st.button("Fetch Latest News", key = "News-Button"):
-      with st..spinner("Running Agent"):
+      with st.spinner("Running Agent"):
         try:
           prompt = """Give latest News Related to Given user Query in Dynamic HTML,
           Output with cards Design format. Strict HTML Output, No Any markdowns Response
