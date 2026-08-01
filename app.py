@@ -28,7 +28,7 @@ if not all(ALL_API):
   st.markdown(f"Get Tavily API Key-{url}")
 elif all(ALL_API):
   st.success("API KEYS LOADED")
-  options = ["gemini-3.5-flash-lite","gemini-3.5-flash","gemini-2.5-flash-lite","gemini-2.5-flash"
+  options = ["gemini-3.5-flash-lite","gemini-3.5-flash","gemini-2.5-flash-lite","gemini-2.5-flash"]
   select_model = st.selectbox("Select-Model",options)
   model = ChatGoogleGenerativeAI(
   model = select_model, google_api_key = GOOGLE_API_KEY)
