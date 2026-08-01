@@ -73,7 +73,7 @@ def run_agent(leader_agent,query):
   return code
 
 #Leader Agent Creation
-if all(API_KEY):
+if all(ALL_API):
   leader_agent = create_agent(model=model,
       tools=[search_latest_info,
              generate_image
