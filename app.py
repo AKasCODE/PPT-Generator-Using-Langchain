@@ -110,7 +110,7 @@ if (user_input):
           st.error("Error Code: ",err)
   with tab3:
     if st.button("Click to Generate PPT",key = "PPT-Button"):
-      with st..spinner("Running Agent"):
+      with st.spinner("Running Agent"):
         try:
           code = run_agent(leader_agent,user)
           st.html(code, width="stretch", unsafe_allow_javascript=True)
